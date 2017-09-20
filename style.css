@@ -1,0 +1,159 @@
+.jumbotron h1{
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #E7E3E0;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 0px 25px 0px 0px;
+  text-decoration: none;
+}
+
+#body {
+	background-color: #E7E3E0;
+	padding: 0px 25px 0px 40px;
+	font-family: 'Lato', sans-serif;
+}
+
+#jumbo {
+	height: 100vh;
+	background:transparent;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 0px;
+	position: relative;
+}
+
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 30px;
+	padding-right: 10vw;
+}
+
+@media(min-width: 600px) {
+	.jumbotron h1{
+		font-size: 50px;
+	}
+
+	#navbar {
+		font-size: 30px;
+	}
+
+	.bottom{
+		padding-bottom: 60px;
+	}
+}
+
+@media(min-width: 1080px) {
+	.jumbotron h1{
+		font-size: 70px;
+	}
+
+	#navbar {
+		font-size: 40px;
+	}
+
+	.bottom{
+		padding-bottom: 80px;
+		padding-right: 30vw;
+	}
+}
+
+hr {
+	width: 135px;
+	height: 2px !important;
+    /* Set the hr color */
+    color: red; /* old IE */
+    background-color: red;
+}
+
+.flex-container {
+    
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 250px;
+    background-color: lightgrey;
+    flex: 0 1 100%;
+}
+
+.content-container {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	flex: 0 1 75%;
+}
+
+.button-container {
+	display: flex;
+	background-color: red;
+	flex: 0 1 100%;
+	justify-content: center !important;
+}
+
+.image {
+	padding: 5px;
+	flex: 0 1 100%;
+
+}
+
+.title {
+	padding: 5px;
+	flex: 0 1 100%;
+
+}
+
+.button {
+	padding: 5px;
+	margin: 10px;
+	width: 100px;
+	height: 50px;
+	background-color: blue;
+
+}
+
+.description {
+	padding: 5px;
+	flex: 0 1 100%;
+
+}
+/* sticky navbar stuff
+Page content 
+.content {
+  padding: 16px;
+}
+
+The sticky class is added to the navbar with JS when it reaches its scroll position 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
+.sticky + .content {
+  padding-top: 60px;
+}
+*/
