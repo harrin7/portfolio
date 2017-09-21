@@ -24,7 +24,7 @@
 
 #body {
 	background-color: #E7E3E0;
-	padding: 0px 25px 0px 40px;
+	padding: 0px 25px 0px 15px;
 	font-family: 'Lato', sans-serif;
 	color: #212121;
 }
@@ -42,7 +42,7 @@
 .bottom {
 	position: absolute;
 	bottom: 0;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 	padding-right: 10vw;
 }
 
