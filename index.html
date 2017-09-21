@@ -15,6 +15,35 @@
     <!-- Google fonts lato -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+
   </head>
 
   <body id="body" onscroll="myFunction()">
@@ -31,9 +60,45 @@
       </div>
       <a id="work"></a>
       <hr align="left">
+      <p>
+        <h1 class="work"> Recent Work </h1>
+      </p>
 
 <!-- Projects -->
 
+<!-- For Real Food -->
+
+  <div class="container">
+    <div class="content-container">
+      <div class="project">
+        <div class="project-column column-0">
+          <div class="project-title">
+            For Real Food
+          </div>
+        </div>
+        <div class="project-column column-1">
+          <img class="project-image" src="./phone.png">
+        </div>
+        <div class="project-column column-2">
+          <div class="project-meta-container">
+            <div class="project-description">
+              A one year design deep dive with Samsung to figure out the future of the human-wearable relation.
+            </div>
+            <div class="project-skillz">
+              skills: design research, rapid prototyping
+            </div>
+            <div class="button-container">
+              <button class="button">photos</button>
+              <button class="button">case study</button>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- 
+  Future of Wearables -->
+
   <div class="container">
     <div class="content-container">
       <div class="project">
@@ -63,54 +128,136 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="content-container">
-      <div class="project">
-        <div class="project-column column-0">
-          <div class="project-title">
-            The Future Of Wearables
+  <!-- Our Story -->
+
+    <div class="container">
+      <div class="content-container">
+        <div class="project">
+          <div class="project-column column-0">
+            <div class="project-title">
+              Our Story
+            </div>
           </div>
+          <div class="project-column column-1">
+            <img class="project-image" src="./phone.png">
+          </div>
+          <div class="project-column column-2">
+            <div class="project-meta-container">
+              <div class="project-description">
+                A one year design deep dive with Samsung to figure out the future of the human-wearable relation.
+              </div>
+              <div class="project-skillz">
+                skills: design research, rapid prototyping
+              </div>
+              <div class="button-container">
+                <button class="button">photos</button>
+                <button class="button">case study</button>
+              </div>
+            </div>
+            </div>
         </div>
-        <div class="project-column column-1">
-          <img class="project-image" src="./phone.png">
-        </div>
-        <div class="project-column column-2">
-          <div class="project-meta-container">
-            <div class="project-description">
-              A one year design deep dive with Samsung to figure out the future of the human-wearable relation.
-            </div>
-            <div class="project-skillz">
-              skills: design research, rapid prototyping
-            </div>
-            <div class="button-container">
-              <button class="button">photos</button>
-              <button class="button">case study</button>
-            </div>
-          </div>
-          </div>
       </div>
     </div>
-  </div>
 
-<!--       navbar sticky script
-      <script>
-      var navbar = document.getElementById("navbar");
-      var sticky = window.innerHeight - navbar.offsetHeight;
+    <!-- Travel App -->
 
-      function myFunction() {
-        if (window.scrollY >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-      </script> -->
+      <div class="container">
+        <div class="content-container">
+          <div class="project">
+            <div class="project-column column-0">
+              <div class="project-title">
+                Travel App
+              </div>
+            </div>
+            <div class="project-column column-1">
+              <img class="project-image" src="./phone.png">
+            </div>
+            <div class="project-column column-2">
+              <div class="project-meta-container">
+                <div class="project-description">
+                  A one year design deep dive with Samsung to figure out the future of the human-wearable relation.
+                </div>
+                <div class="project-skillz">
+                  skills: design research, rapid prototyping
+                </div>
+                <div class="button-container">
+                  <button class="button">photos</button>
+                  <button class="button">case study</button>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <!-- Engage -->
+
+        <div class="container">
+          <div class="content-container">
+            <div class="project">
+              <div class="project-column column-0">
+                <div class="project-title">
+                  Engage +
+                </div>
+              </div>
+              <div class="project-column column-1">
+                <img class="project-image" src="./phone.png">
+              </div>
+              <div class="project-column column-2">
+                <div class="project-meta-container">
+                  <div class="project-description">
+                    A one year design deep dive with Samsung to figure out the future of the human-wearable relation.
+                  </div>
+                  <div class="project-skillz">
+                    skills: design research, rapid prototyping
+                  </div>
+                  <div class="button-container">
+                    <button class="button">photos</button>
+                    <button class="button">case study</button>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Statement -->
+
+          <div class="container">
+            <div class="content-container">
+              <div class="project">
+                <div class="project-column column-0">
+                  <div class="project-title">
+                    Personal Statement
+                  </div>
+                </div>
+                <div class="project-column column-1">
+                  <img class="project-image" src="./phone.png">
+                </div>
+                <div class="project-column column-2">
+                  <div class="project-meta-container">
+                    <div class="project-description">
+                      A one year design deep dive with Samsung to figure out the future of the human-wearable relation.
+                    </div>
+                    <div class="project-skillz">
+                      skills: design research, rapid prototyping
+                    </div>
+                    <div class="button-container">
+                      <button class="button">photos</button>
+                      <button class="button">case study</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <a id="about"></a>
+          <hr class="padding-top" align="left">
+          <p>
+            <h1> About Me </h1>
+            My family calls me Patch.. it's a long story with many witnesses claiming to know the origin of the name, but the details are lost with the time. I'm a product designer roaming the streets of San Francisco. My 
+          </p>
 
     
   </body>

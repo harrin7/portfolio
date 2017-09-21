@@ -1,3 +1,9 @@
+.work {
+	margin-bottom: -60px;
+	font-size: 18px;
+	color: #615E5C;
+}
+
 .jumbotron h1{
 	font-size: 30px;
 	padding-top: 10px;
@@ -46,22 +52,7 @@
 	padding-right: 0vw;
 }
 
-@media(min-width: 600px) {
-	.jumbotron h1{
-		font-size: 50px;
-	}
-
-	#navbar {
-		font-size: 30px;
-	}
-
-	.bottom{
-		padding-bottom: 60px;
-		padding-right: 10vw;
-	}
-}
-
-@media(min-width: 800px) {
+@media(min-width: 850px) {
 	.jumbotron h1{
 		font-size: 60px;
 	}
@@ -78,7 +69,13 @@
 	#body {
 	background-color: #E7E3E0;
 	padding: 0px 25px 0px 50px;
-}
+	}
+
+	.work {
+		margin-bottom: -140px;
+		font-size: 24px;
+		color: #615E5C;
+	}
 }
 
 hr {
@@ -87,6 +84,10 @@ hr {
     /* Set the hr color */
     color: red; /* old IE */
     background-color: red;
+}
+
+.padding-top{
+	margin-top: 50px;
 }
 /* sticky navbar stuff
 Page content 

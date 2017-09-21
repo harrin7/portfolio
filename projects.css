@@ -20,12 +20,13 @@
 
 .container {
   width: 100%;
-  margin-top: 80px;
   padding: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin-top: 100px;
+
 }
 
 .content-container {
@@ -45,7 +46,10 @@
   align-items: center;
   width: 100%;
   max-width: 400px;
+}
 
+.project-column.column-2 {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-image {
@@ -53,6 +57,7 @@
   width: 100%;
   height: auto;
   max-width: 400px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-title {
@@ -65,6 +70,8 @@
   background-color: red;
   margin-top: -40px;
   margin-right: 30px;
+  align-self: flex-end;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-meta-container {
@@ -86,35 +93,72 @@
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 400;
-  color: #424242;
+  color: #615E5C;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
+  .container {
+    margin-top: 200px;
+  }
+
   .content-container {
-    width: 75%;
+    min-width: 800px;
+    margin-left: -7vw;
   }
 
   .project-column {
-    max-width: none;
-  }
+  max-width: none;
+  justify-content: center;
 
-  .project-column.column-1 {
-    width: 35%;
+}
+  .project-column.column-0 {
     justify-content: flex-end;
   }
 
+  .project-column.column-1 {
+    width: 60%;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+
   .project-column.column-2 {
-    width: 65%;
+    width: 40%;
+    background-color: white;
+    padding: 50px 10px 10px 0px;
   }
 
   .project-title {
-    align-self: flex-center;
+    align-self: flex-end;
+    margin-bottom: -25px;
+    font-size: 25px;
   }
 
   .project-image {
-    width: 130%;
-    margin-bottom: -50px;
-    margin-left: -80px;
-    padding-top: 10px;
+    height: 100%;
+    align-self: flex-end;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .project-skillz {
+    padding-bottom: 5vh;
+    font-size: 16px;
+  }
+
+  .project-meta-container {
+    margin-top: 0px;
+    padding: 15px;
+    max-width: 80%;
+    background-color: white;
+    border-top: 2px solid red;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .project-description{
+    font-size: 20px;
   }
 }
