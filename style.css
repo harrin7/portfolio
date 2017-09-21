@@ -26,6 +26,7 @@
 	background-color: #E7E3E0;
 	padding: 0px 25px 0px 40px;
 	font-family: 'Lato', sans-serif;
+	color: #212121;
 }
 
 #jumbo {
@@ -80,64 +81,6 @@ hr {
     /* Set the hr color */
     color: red; /* old IE */
     background-color: red;
-}
-
-.flex-container {
-    
-}
-
-#container {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-    flex-wrap: wrap;
-    width: 500px;
-    height: 250px;
-    background-color: lightgrey;
-    flex: 0 1 100%;
-}
-
-.content-container {
-	display: flex;
-	flex-direction: column;
-	background-color: white;
-	width: 200px;
-	height: 200px;
-	flex: 0 1 75%;
-}
-
-.button-container {
-	display: flex;
-	background-color: red;
-	flex: 0 1 100%;
-	justify-content: center !important;
-}
-
-.image {
-	padding: 5px;
-	flex: 0 1 100%;
-
-}
-
-.title {
-	padding: 5px;
-	flex: 0 1 100%;
-
-}
-
-.button {
-	padding: 5px;
-	margin: 10px;
-	width: 100px;
-	height: 50px;
-	background-color: blue;
-
-}
-
-.description {
-	padding: 5px;
-	flex: 0 1 100%;
-
 }
 /* sticky navbar stuff
 Page content 

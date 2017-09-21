@@ -1,0 +1,118 @@
+
+
+.button {
+  border: none;
+  background-color: white;
+  margin-right: 15px;
+  margin-left: 15px;
+  flex: 0 1 50%;
+  color: red;
+  padding: 0px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 100%;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  margin-top: 100px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 95%;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+
+}
+
+.project-image {
+  margin-top: -40px;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+.project-title {
+  position: relative;
+  left: 50px;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: red;
+  margin-top: -40px;
+  margin-right: 10px;
+}
+
+.project-meta-container {
+  margin-top: 0px;
+  padding: 15px;
+  background-color: white;
+  border-top: 2px solid red;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.project-description {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.project-skillz {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #424242;
+}
+
+@media (min-width: 800px) {
+  .content-container {
+    width: 75%;
+  }
+
+  .project-column {
+    max-width: none;
+  }
+
+  .project-column.column-1 {
+    width: 35%;
+    justify-content: flex-end;
+  }
+
+  .project-column.column-2 {
+    width: 65%;
+  }
+
+  .project-title {
+    align-self: flex-center;
+  }
+
+  .project-image {
+    width: 130%;
+    margin-bottom: -50px;
+    margin-left: -80px;
+    padding-top: 10px;
+  }
+}
