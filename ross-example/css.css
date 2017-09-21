@@ -1,27 +1,18 @@
-
-
-.button {
-  border: none;
-  background-color: white;
-  margin-right: 15px;
-  margin-left: 15px;
-  flex: 0 1 50%;
-  color: red;
-  padding: 0px;
-  font-size: 17px;
+body {
+  background-color: #e7e3e0;
+  font-family: sans-serif;
+  padding-top: 200px;
 }
 
-.button-container {
-  display: flex;
-  flex-direction: row;
-  flex: 0 1 100%;
-  justify-content: center;
+.button {
+  border: 1px solid red; padding: 10px;
+  border-radius: 4px;
+  background-color: white;
 }
 
 .container {
   width: 100%;
-  margin-top: 80px;
-  padding: 0px;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,6 +26,7 @@
 .project {
   display: flex;
   flex-direction: row;
+  background-color: white;
   flex-wrap: wrap;
 }
 
@@ -44,76 +36,63 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-width: 400px;
-
 }
 
 .project-image {
-  margin-top: -40px;
-  width: 100%;
+  margin-top: 40px;
+  width: 90%;
   height: auto;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .project-title {
   position: relative;
   left: 50px;
   padding: 15px;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   background-color: red;
   margin-top: -40px;
-  margin-right: 10px;
 }
 
 .project-meta-container {
-  margin-top: 0px;
-  padding: 15px;
-  background-color: white;
-  border-top: 2px solid red;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
+  margin-top: 40px;
+  padding: 30px;
 }
 
 .project-description {
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 500;
 }
 
 .project-skillz {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
   font-weight: 400;
-  color: #424242;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 980px) {
   .content-container {
     width: 75%;
   }
 
-  .project-column {
-    max-width: none;
-  }
-
   .project-column.column-1 {
-    width: 35%;
+    width: 40%;
     justify-content: flex-end;
   }
 
   .project-column.column-2 {
-    width: 65%;
+    width: 60%;
   }
 
   .project-title {
-    align-self: flex-center;
+    align-self: flex-end;
   }
 
   .project-image {
-    width: 130%;
+    width: 100%;
     margin-bottom: -50px;
-    margin-left: -80px;
-    padding-top: 10px;
+    margin-left: -50px;
   }
 }
