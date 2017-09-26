@@ -1,6 +1,22 @@
+.email {
+	padding: 50px;
+	margin-bottom: 70px;
+	font-size : 17px;
+}
+
+.email_link {
+	color: red;
+}
+
 .work {
 	margin-bottom: -60px;
-	font-size: 18px;
+	font-size: 20px;
+	color: #615E5C;
+}
+
+.about {
+	margin-bottom: 75px;
+	font-size: 20px;
 	color: #615E5C;
 }
 
@@ -10,7 +26,7 @@
 }
 
 /* Style the navbar */
-#navbar {
+#bar {
   overflow: hidden;
   background-color: #E7E3E0;
   padding: 0px 0px 0px 0px;
@@ -19,10 +35,9 @@
 }
 
 /* Navbar links */
-#navbar a {
+#bar a {
   float: left;
   display: block;
-  color: red;
   text-align: center;
   padding: 0px 25px 0px 0px;
   text-decoration: none;
@@ -53,11 +68,15 @@
 }
 
 @media(min-width: 850px) {
+	.email {
+		font-size : 18px;
+	}
+
 	.jumbotron h1{
 		font-size: 60px;
 	}
 
-	#navbar {
+	#bar {
 		font-size: 30px;
 	}
 
@@ -76,11 +95,17 @@
 		font-size: 24px;
 		color: #615E5C;
 	}
+
+	.about {
+		margin-bottom: 75px;
+		font-size: 24px;
+		color: #615E5C;
+	}
 }
 
 hr {
 	width: 135px;
-	height: 2px !important;
+	height: 2px;
     /* Set the hr color */
     color: red; /* old IE */
     background-color: red;
@@ -89,21 +114,6 @@ hr {
 .padding-top{
 	margin-top: 50px;
 }
-/* sticky navbar stuff
-Page content 
-.content {
-  padding: 16px;
-}
 
-The sticky class is added to the navbar with JS when it reaches its scroll position 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
-.sticky + .content {
-  padding-top: 60px;
-}
-*/
+a { color: red; }
+a:hover { color: #615E5C; }
