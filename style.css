@@ -6,7 +6,7 @@
 }
 
 .email_link {
-	color: #F42B03;
+	color: #FF5559;
 }
 
 .work {
@@ -109,15 +109,15 @@ hr {
 	width: 135px;
 	height: 2px;
     /* Set the hr color */
-    color: #F42B03; /* old IE */
-    background-color: #F42B03;
+    color: #FF5559; /* old IE */
+    background-color: #FF5559;
 }
 
 .padding-top{
 	margin-top: 50px;
 }
 
-a { color: #F42B03; }
+a { color: #FF5559; }
 a:hover { color: #615E5C; }
 
 @media(min-width: 1000px){
