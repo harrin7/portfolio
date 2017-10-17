@@ -29,7 +29,7 @@
 /* Style the navbar */
 #bar {
   overflow: hidden;
-  background-color: #FFFEFE;
+  background-color: #F9FAFC;
   padding: 0px 0px 0px 0px;
   margin: 0px;
   font-size: 20px;
@@ -45,7 +45,7 @@
 }
 
 #body {
-	background-color: #FFFEFE;
+	background-color: #F9FAFC;
 	padding: 0px 25px 0px 25px;
 	font-family: 'Lato', sans-serif;
 	color: #212121;
@@ -87,7 +87,7 @@
 	}
 
 	#body {
-	background-color: #FFFEFE;
+	background-color: #F9FAFC;
 	padding: 0px 25px 0px 50px;
 	}
 
