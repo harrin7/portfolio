@@ -6,7 +6,7 @@
 }
 
 .email_link {
-	color: red;
+	color: #F42B03;
 }
 
 .work {
@@ -29,7 +29,7 @@
 /* Style the navbar */
 #bar {
   overflow: hidden;
-  background-color: #E7E3E0;
+  background-color: #FFFEFE;
   padding: 0px 0px 0px 0px;
   margin: 0px;
   font-size: 20px;
@@ -45,7 +45,7 @@
 }
 
 #body {
-	background-color: #E7E3E0;
+	background-color: #FFFEFE;
 	padding: 0px 25px 0px 25px;
 	font-family: 'Lato', sans-serif;
 	color: #212121;
@@ -87,7 +87,7 @@
 	}
 
 	#body {
-	background-color: #E7E3E0;
+	background-color: #FFFEFE;
 	padding: 0px 25px 0px 50px;
 	}
 
@@ -109,15 +109,15 @@ hr {
 	width: 135px;
 	height: 2px;
     /* Set the hr color */
-    color: red; /* old IE */
-    background-color: red;
+    color: #F42B03; /* old IE */
+    background-color: #F42B03;
 }
 
 .padding-top{
 	margin-top: 50px;
 }
 
-a { color: red; }
+a { color: #F42B03; }
 a:hover { color: #615E5C; }
 
 @media(min-width: 1000px){
